@@ -20,6 +20,7 @@ export default function Home() {
       </Input>
 
       <FlatList
+        showsHorizontalScrollIndicator={false}
         data={EMAILS}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <Email data={item} />}
@@ -28,8 +29,8 @@ export default function Home() {
           Principal
         </Text>}
       />
-     
-      <FloatButton/>
+
+      <FloatButton icon="edit" />
     </View>
   )
 }
